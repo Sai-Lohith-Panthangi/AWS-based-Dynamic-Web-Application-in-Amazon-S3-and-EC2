@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set the title of the page -->
+    <title>About Me</title>
+    <!-- Define character set and viewport for better rendering -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link to W3.CSS framework and Google Fonts -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link to Bootstrap CSS for enhanced styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS styles -->
+    <style>
+        body,
+        html {
+            height: 99%; font-family: "Montserrat", sans-serif; margin: 0; padding: 0;
+            background-color: rgb(40, 3, 3);color: #fff;
+            user-select: default;cursor: default;
+        }
+
+        .background-image {
+            background-position: center; background-size: cover;
+            background-image: url("IMG_0731.jpg"); min-height: 95%;
+        }
+
+        .menu-link {
+            display: block; padding: 8px 16px; text-decoration: underline; color: #fff; transition: color 0.3s ease;
+        }
+
+        .menu-link:hover {
+            color: #ffcc00;
+        }
+
+        #about p,
+        .w3-text-grey {
+            font-size: 16px; line-height: 1.6; color: #ccc;
+        }
+
+        /* Animation */
+        .animated {
+            animation-duration: 1s; animation-fill-mode: both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;  transform: translate3d(0, 100%, 0);
+            }
+
+            to {
+                opacity: 1;  transform: none;
+            }
+        }
+
+        .fadeInUp {
+            animation-name: fadeInUp;
+        }
+
+        .myskills-container p {
+            color: #ccc; 
+        }
+
+        .myskills-container p strong {
+            font-weight: bold; 
+        }
+        a {
+          cursor: pointer; 
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Bootstrap Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-black bg-black">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong>PORTFOLIO</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#about">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#workdetails">Work Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#Projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#myskills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#technical">Certifications/Papers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-link" href="#assignments">Links</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="background-image w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-right w3-center w3-padding-large w3-hide-small animated fadeInUp">
+            <span class="w3-tag">G01389946 <br> MS in Computer science, <br> George Mason University. <br> Fairfax, VA</span>
+        </div>
+        <div class="w3-display-topright w3-right animated fadeInUp">
+            <h1 style="font-family: 'Courier New', monospace; font-size: 60px; color: rgb(40, 3, 3); text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">SAI LOHITH <br> PANTHANGI</h1>
+        </div>
+    </header>
+
+    <!-- About me Container -->
+    <div id="about" class="w3-container" style="padding:32px;">
+        <div class="w3-content" style="max-width:850px">
+            <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
+            <p class="animated fadeInUp">A tech enthusiast wanted to pursue challenging, growth-oriented, and enriching education in the field of computer science that helps to prove the best of my ability in the field of software development. My experience as a System Engineer at Tata Consultancy Services involved resolving code-fix issues for VERIZON clients, modifying existing software, and coordinating deployments of new software. These experiences have honed my technical skills and provided valuable insights into problem-solving and support services. Additionally, during my tenure as a System Engineer at Tata Consultancy Services, I was assigned with the role of Team Lead for a Networking project. This experience allowed me to further enhance my leadership and collaboration skills, guiding a team towards successful project completion.</p>
+            <div class="w3-panel w3-leftbar w3-light-grey"></div>
+        </div>
+        <br> <br />
+    </div>
+
+    <!-- Work Container -->
+    <div id="workdetails" class="w3-container">
+        <div class="w3-content" style="max-width:850px">
+            <h5 class="w3-center w3-padding-30" style="color: #ddd;"><span class="w3-tag w3-wide">WORK EXPERIENCE</span></h5>
+            <div id="WorkExperience" class="work-details-container w3-container w3-padding-48 w3-card animated fadeInUp" style="display:block;">
+               <br> <h5 style="color: white;">SYSTEM ENGINEER, TATA CONSULTANCY SERVICES, Hyderabad, India </h5> <br />
+                <p style="color: white;" class="w3-text-grey">• Worked as a system engineer (Full Stack Developer) for VERIZON clients. </p>
+                <p style="color: white;" class="w3-text-grey">• Resolving code-fix issues and escalating problems with knowledgeable support and quality service. </p>
+                <p style="color: white;" class="w3-text-grey">• Modifying existing Type software to correct coding errors, upgrade interfaces, and improve overall performance.</p>
+                <p style="color: white;" class="w3-text-grey">• Coordinated deployments of new software, feature updates, and fixes.</p><br>
+
+               <br> <h5 style="color: white;">Web Development Intern, Spectra Assistive Technologies, Hyderabad, India </h5> <br />
+                <p style="color: white;" class="w3-text-grey">• Developed user interfaces with modern JavaScript frameworks, HTML5 and CSS3.</p><br>
+            </div>
+            <br> <br />
+            <h5 class="w3-center w3-padding-30" style="color: #ddd;"><span class="w3-tag w3-wide">PROJECTS</span></h5>
+
+            <div id="Projects" class="work-details-container w3-container w3-padding-48 w3-card animated fadeInUp" style="display:block;">
+                <br ><h5 style="color: white;">4S Navigation tool extension in VS Code, GMU </h5> <br />
+                <p style="color: white;" class="w3-text-grey">This innovative project we created, named the 4S Navigation Tool, is an extension for Visual Studio Code that integrates three key functionalities: Go to Definition, Subword Search, and Stack Overflow Search. By streamlining the coding experience, the tool empowers developers to navigate extensive codebases more effectively, reducing the time spent searching for specific functions, variables, or classes. This extension is approved by VScode and is available in Realtime.</p><br>
+
+                <br ><h5 style="color: white;">Breast Cancer Detection Using Meta-Learning And ANN </h5><br />
+                <p style="color: white;" class="w3-text-grey">In this Project, we have analyzed the various methods used by the researchers, their advantages and limitations and we have tried to use, various supervised and unsupervised learning models like Random Forest, KNN, SVM, Logistic Regression, Ada Boost, Perceptron, and feature selection. The data set used for this is the Wisconsin Breast Cancer Data set which has 569 instances of breast cancer patients. Metrics like Accuracy, Precision, Recall, F1-Score, and ROC-curve are used to judge the performance of the model.</p><br>
+            </div>
+        </div>
+    </div>
+    <br> <br />
+
+    <!-- Skills Container -->
+    <div id="myskills" class="w3-container" style="padding-bottom:32px;">
+        <div class="w3-content" style="max-width:850px">
+            <h5 class="w3-center w3-padding-30"><span class="w3-tag w3-wide">SKILLSET</span></h5>
+            <div id="skills" class="myskills-container w3-container w3-padding-48 w3-card animated fadeInUp" style="display:block;">
+                <p style="color: white;" class="w3-text-grey"> • <strong>Programming Languages:</strong> C++, C, Python, SQL, Java.</p>
+                <p style="color: white;" class="w3-text-grey"> • <strong>Web Technologies:</strong> HTML, CSS, JavaScript, Bootstrap.</p>
+                <p style="color: white;" class="w3-text-grey"> • <strong>Databases & Servers:</strong> MySQL, MATLAB</p>
+                <p style="color: white;" class="w3-text-grey"> • <strong>Development & Versioning Tools:</strong> Spyder, Eclipse, NetBeans, Jupyter Notebook, WordPress, PyCharm, VS code, IntelliJ Idea.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Technical Certifications/Papers/Publications Container -->
+    <div id="technical" class="w3-container" style="padding-bottom:32px;">
+        <div class="w3-content" style="max-width:850px">
+            <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">TECHNICAL CERTIFICATIONS/PAPERS/PUBLICATIONS</span></h5>
+            <div id="technical-content" class="technical-container w3-container w3-padding-30 w3-card animated fadeInUp" style="display:block;">
+                <ul>
+                    <p style="color: white;" class="w3-text-grey">•<strong> "A Hybrid Algorithm for Breast Cancer Detection Using Meta-Learning and ANN"</strong> - Paper published in International Journal of All Research Education and Scientific Methods(IJARESM). Volume 10, Issue 5, May 2022. ISSN:2455-6211.</li></p>
+                    <p style="color: white;" class="w3-text-grey">•<strong> "Smart surveillance using computer vision"</strong> - Paper published in International Journal of Innovative Science and Research Technology (IJISRT).Volume 6, Issue 6, June-2021. ISSN:2456-2165.</li></p>
+                    <p style="color: white;" class="w3-text-grey">•<strong> "Driver drowsiness detection using AI"</strong> - Paper published in International Journal of All Research Education and Scientific Methods(IJARESM). Volume 10, Issue 5, June-2022.ISSN:2455-6211.</li></p>
+                    <p style="color: white;" class="w3-text-grey">• Completed a certification course on <strong>"Complete web development boot camp"</strong>, Udemy, 2021</li></p>
+                    <p style="color: white;" class="w3-text-grey">• Completed a course on <strong>"Zero to Hero:complete Java full stack development"</strong>, Coursera, 2020</li></p>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Assignments Container -->
+<div id="assignments" class="w3-container" style="padding-bottom:32px;">
+    <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ASSIGNMENT LINKS</span></h5>
+        <div id="assignments" class="assignments-container w3-container w3-padding-30 w3-card animated fadeInUp" style="display:block;">
+            <ul>
+                <li><a href="ComputerScienceDepartment.html" class="menu-link">Computer Science Department</a></li>
+                <li><a href="Surveyform.html" class="menu-link">Survey Form</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <!-- JavaScript for content swapping -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var links = document.querySelectorAll(".menu-link");
+            
+            links.forEach(function(link) {
+                link.addEventListener("click", function(event) {
+                    var target = this.getAttribute("href");
+                    
+                    if (target.charAt(0) === '#') {
+                        event.preventDefault();
+                        
+                        document.querySelector(target).scrollIntoView({
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    
+    
+</body>
+
+</html>

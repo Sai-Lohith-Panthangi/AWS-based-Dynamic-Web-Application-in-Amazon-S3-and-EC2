@@ -1,0 +1,226 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--  character set and viewport  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Setting the title of the page -->
+    <title>Computer Science Department | GMU</title>
+
+    <!-- Link to Bootstrap CSS for enhanced styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Internal CSS styles specific to this page -->
+    <style>
+        
+        body {
+            background-color: whitesmoke; /* Apply a whitesmoke background */
+            font-family: Arial, sans-serif; /* Specify the font */
+            color: #333;  margin: 0; /* Eliminate default margin */ padding: 0; /* Eliminate default padding */
+            text-align: center; /* Center-align text */ position: relative; /* Position the content relative to the body */
+            user-select: none; cursor: default;
+        }
+
+        /* Container for the watermark background image */
+        .background-container {
+            background-image: url('gmulogo.png'); /* Add the URL of your logo */
+            background-repeat: no-repeat; background-size: contain;  background-position: center; /* Center the background image */
+            opacity: 0.2;  position: fixed;  top: 0;  left: 0;  bottom: 0;  right: 0; 
+            z-index: -1; /* Ensure the background image appears behind other content */
+        }
+
+        /* Container to hold the main content */
+        .content-container {
+            max-width: 1050px;  padding: 10px; /* Add padding around the content */
+            margin: auto; /* Center the container horizontally */ text-align: left; 
+            position: relative; /* Position the content relative to the body */  z-index: 1; /* Ensure the content appears above the background image */
+        }
+
+        /* Styling for the header section */
+        .header-section {
+            border: 5px solid #006633; /* Apply a green border */
+            padding: 20px;  background-color: #FFCC33; /* Set a yellow background color */
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Apply a shadow */
+            display: flex; align-items: center; /* Center items vertically within the header */
+        }
+
+         /* Styling for the main header title */
+         .header-title {
+             color: #006633; /* Set the color to GMU green */ font-size: 24px; margin: 0; 
+         }
+         /* Styling for the logo within the header */
+         .header-logo {
+             max-width: 250px;   max-height: 60px;  margin-right: 20px; 
+         }
+ 
+         /* Styling for lists in the content */
+         .content-list {
+             list-style-type: disc;  margin-left: 20px; /* Indent the list items */
+         }
+ 
+         /* Styling for tables in the content */
+         .content-table {
+             width: 100%;  border-collapse: collapse; /* Collapse borders between table cells */ margin-top: 20px; 
+         }
+ 
+         /* Styling for table headers in the content */
+         .table-header,
+         .table-data {
+             border: 1px solid #006633;  padding: 8px; text-align: center; 
+         }
+ 
+         /* Styling for table header cells */
+         .table-header {
+             background-color: #006633; /* Set a green background color */ color: #FFCC33; /* Set yellow text color */
+         }
+ 
+         /* Styling for the footer section */
+         .footer-section {
+             background-color: #006633; /* Set a green background color */ padding: 10px; 
+             text-align: center;  color: #FFCC33;  margin-top: 20px;  font-size: 15px; 
+         }
+ 
+         a {
+            cursor: pointer; 
+        }
+        /* Styling for the navigation bar */
+        .navbar {
+            background-color: #006633; /* Set green background color */
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: #FFCC33; /* Set yellow text color */
+        }
+
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #FFEE99; /* Set lighter yellow text color on hover */
+        }
+     </style>
+ </head>
+
+ <body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">George Mason University | CS </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#degrees">Degrees</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#required-courses">Required Courses</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Surveyform.html">Survey Form</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Container for the watermark background image -->
+    <div class="background-container"></div>
+
+    <!-- Container for the main content -->
+    <div class="content-container">
+
+        <!-- Page header with logo and main title -->
+        <header>
+            <div class="header-section">
+                <img src="img.png" alt="Computer Science Department Logo" class="header-logo">
+                <h1><strong class="header-title">COMPUTER SCIENCE DEPARTMENT</strong></h1>
+            </div>
+        </header>
+
+        <!-- Paragraphs outside the header box -->
+        <br> <br />
+        <p class="welcome-text">Welcome to the Department of Computer Science at George Mason University!</p>
+        <p class="custom-text">With nearly 80 full-time faculty members, the CS Department at Mason is the largest
+            department in the College of Engineering and Computing, one of the largest departments on campus, and the
+            largest, fastest growing, and highest-ranked Computer Science department in the Commonwealth of Virginia.
+            Today, not only is computing pervasive in society, but computational methods are used in almost every field
+            of scholarly endeavor ranging from the arts and humanities to the hard sciences and engineering, as well as
+            every sector of industry. Given the importance of computing in today's world, we strongly support the goal
+            of "Computing for All", providing a diverse array of programs and courses in computing to students from all
+            backgrounds and at all levels.</p>
+
+        <!-- List of MS Degrees -->
+        <h2 id="degrees">MS Degrees</h2>
+        <ul class="content-list">
+            <li>MS in Computer Science</li>
+            <li>MS in Information Systems</li>
+            <li>MS in Software Engineering</li>
+        </ul>
+
+        <!-- Table of required courses for each of the MS Degrees -->
+        <h3 id="required-courses">Required Courses</h3>
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th class="table-header">S.No</th>
+                    <th class="table-header">Course Number</th>
+                    <th class="table-header">Course Name</th>
+                    <th class="table-header">Department</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="table-data">1</td>
+                    <td class="table-data">CS 530</td>
+                    <td class="table-data">Fundamentals of Engineering Mathematics</td>
+                    <td class="table-data">Master of Science in Computer Science</td>
+                </tr>
+                <tr>
+                    <td class="table-data">2</td>
+                    <td class="table-data">CS 583</td>
+                    <td class="table-data">Analysis of Algorithms</td>
+                    <td class="table-data">Master of Science in Computer Science</td>
+                </tr>
+                <tr>
+                    <td class="table-data">3</td>
+                    <td class="table-data">INFS 335</td>
+                    <td class="table-data">Information Networks</td>
+                    <td class="table-data">Master of Science in Information Systems</td>
+                </tr>
+                <tr>
+                    <td class="table-data">4</td>
+                    <td class="table-data">INFS 422</td>
+                    <td class="table-data">Hardware and Cyber Physical System</td>
+                    <td class="table-data">Master of Science in Information Systems</td>
+                </tr>
+                <tr>
+                    <td class="table-data">5</td>
+                    <td class="table-data">SWE 500</td>
+                    <td class="table-data">Introduction to Software Architecture</td>
+                    <td class="table-data">Master of Science in Software Engineering</td>
+                </tr>
+                <tr>
+                    <td class="table-data">6</td>
+                    <td class="table-data">CS 521</td>
+                    <td class="table-data">World Web Services</td>
+                    <td class="table-data">Master of Science in Software Engineering</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Footer section -->
+        <div class="footer-section">
+                4400 University Drive, Fairfax, VA 22030<br />
+                Contact: +1 9876543211 <br />
+            </p>
+        </div>
+    </div>
+</body>
+</html>

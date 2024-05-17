@@ -65,7 +65,9 @@ This project encompasses the development and deployment of a web application foc
    - Implemented Ajax functionality to populate fields dynamically based on user input.
    - Retrieved JSON data for validation and error handling.
 
-
+## URLs
+- S3 Bucket: https://s3.amazonaws.com/sailohith.com/dynamic_web_Application/index.html
+- 
 ## Additional Notes
 - Incorporated George Mason University color scheme for consistency.
 - Ensured all HTML5 pages meet specified criteria.
